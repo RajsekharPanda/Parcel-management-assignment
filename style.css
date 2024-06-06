@@ -110,3 +110,8 @@ button:disabled {
    background-color: #666;
    cursor: not-allowed;
 }
+
+.funcButtons{
+   display: flex;
+   justify-content: space-around;
+}
