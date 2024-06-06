@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.group-header {
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 10px 0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.parcel-container {
+    max-height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.parcel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.parcel.selected {
+    background-color: #cce5ff;
+    border: 2px solid #004085;
+}
+
+.parcel .parcel-sequence {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.parcel.Mumbai {
+    background-color: #ffeeba;
+    border-left: 5px solid #856404;
+}
+
+.parcel.Delhi {
+    background-color: #f5c6cb;
+    border-left: 5px solid #721c24;
+}
+
+.parcel.Kolkata {
+    background-color: #c3e6cb;
+    border-left: 5px solid #155724;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"], select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.selected-parcel {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f8f9fa;
+}

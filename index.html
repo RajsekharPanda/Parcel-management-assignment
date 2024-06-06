@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="parcelGroupHeaders"></div>
+        <div class="parcel-container" id="parcelContainer"></div>
+        <div class="controls">
+            <input type="text" id="parcelName" placeholder="Parcel Name">
+            <select id="parcelGroup">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+            <button onclick="addAfter()">Add After</button>
+            <button onclick="addBefore()">Add Before</button>
+            <button onclick="replaceParcel()">Replace</button>
+            <button onclick="deleteParcel()">Delete</button>
+            <button onclick="refreshParcels()">Refresh</button>
+            <button onclick="showFinalData()">Show Final</button>
+        </div>
+        <div class="selected-parcel" id="selectedParcel">Selected Parcel: None</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
