@@ -20,7 +20,8 @@ body {
 
 .parcel-container {
    display: flex;
-   flex-wrap: wrap;
+   overflow-y: scroll;
+   /* flex-wrap: wrap; */
 }
 
 .parcel {
